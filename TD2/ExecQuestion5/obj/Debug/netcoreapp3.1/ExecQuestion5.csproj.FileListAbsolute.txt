@@ -1,0 +1,13 @@
+C:\Users\bastien\Documents\GitHub\eiin839\TD2\ExecQuestion5\bin\Debug\netcoreapp3.1\ExecQuestion5.exe
+C:\Users\bastien\Documents\GitHub\eiin839\TD2\ExecQuestion5\bin\Debug\netcoreapp3.1\ExecQuestion5.deps.json
+C:\Users\bastien\Documents\GitHub\eiin839\TD2\ExecQuestion5\bin\Debug\netcoreapp3.1\ExecQuestion5.runtimeconfig.json
+C:\Users\bastien\Documents\GitHub\eiin839\TD2\ExecQuestion5\bin\Debug\netcoreapp3.1\ExecQuestion5.runtimeconfig.dev.json
+C:\Users\bastien\Documents\GitHub\eiin839\TD2\ExecQuestion5\bin\Debug\netcoreapp3.1\ExecQuestion5.dll
+C:\Users\bastien\Documents\GitHub\eiin839\TD2\ExecQuestion5\bin\Debug\netcoreapp3.1\ExecQuestion5.pdb
+C:\Users\bastien\Documents\GitHub\eiin839\TD2\ExecQuestion5\obj\Debug\netcoreapp3.1\ExecQuestion5.csprojAssemblyReference.cache
+C:\Users\bastien\Documents\GitHub\eiin839\TD2\ExecQuestion5\obj\Debug\netcoreapp3.1\ExecQuestion5.AssemblyInfoInputs.cache
+C:\Users\bastien\Documents\GitHub\eiin839\TD2\ExecQuestion5\obj\Debug\netcoreapp3.1\ExecQuestion5.AssemblyInfo.cs
+C:\Users\bastien\Documents\GitHub\eiin839\TD2\ExecQuestion5\obj\Debug\netcoreapp3.1\ExecQuestion5.csproj.CoreCompileInputs.cache
+C:\Users\bastien\Documents\GitHub\eiin839\TD2\ExecQuestion5\obj\Debug\netcoreapp3.1\ExecQuestion5.dll
+C:\Users\bastien\Documents\GitHub\eiin839\TD2\ExecQuestion5\obj\Debug\netcoreapp3.1\ExecQuestion5.pdb
+C:\Users\bastien\Documents\GitHub\eiin839\TD2\ExecQuestion5\obj\Debug\netcoreapp3.1\ExecQuestion5.genruntimeconfig.cache

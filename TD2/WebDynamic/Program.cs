@@ -4,6 +4,8 @@ using System.IO;
 using System.Net;
 using System.Text;
 using System.Web;
+using System.Reflection;
+using WebDynamic;
 
 namespace BasicServerHTTPlistener
 {
@@ -11,6 +13,7 @@ namespace BasicServerHTTPlistener
     {
         private static void Main(string[] args)
         {
+            string result = "Bonjour";
 
             //if HttpListener is not supported by the Framework
             if (!HttpListener.IsSupported)
@@ -18,8 +21,8 @@ namespace BasicServerHTTPlistener
                 Console.WriteLine("A more recent Windows version is required to use the HttpListener class.");
                 return;
             }
- 
- 
+
+
             // Create a listener.
             HttpListener listener = new HttpListener();
 
@@ -71,7 +74,7 @@ namespace BasicServerHTTPlistener
                         documentContents = readStream.ReadToEnd();
                     }
                 }
-                
+
                 // get url 
                 Console.WriteLine($"Received request for {request.Url}");
 
@@ -108,9 +111,17 @@ namespace BasicServerHTTPlistener
                 // Obtain a response object.
                 HttpListenerResponse response = context.Response;
 
+                string meth = request.Url.Segments[request.Url.Segments.Length-1];
+                Type type = typeof(Mymethods);
                 // Construct a response.
-                string responseString = "<HTML><BODY> Hello world!</BODY></HTML>";
-                byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
+                if(type.GetMethod(meth) != null)
+                {
+                    MethodInfo method = type.GetMethod(meth);
+                    Mymethods myMethods = new Mymethods();
+                    result = (string)method.Invoke(myMethods, new Object[] {HttpUtility.ParseQueryString(request.Url.Query).Get("param1"), HttpUtility.ParseQueryString(request.Url.Query).Get("param2") });
+                }
+
+                byte[] buffer = System.Text.Encoding.UTF8.GetBytes(result);
                 // Get a response stream and write the response to it.
                 response.ContentLength64 = buffer.Length;
                 System.IO.Stream output = response.OutputStream;
