@@ -5,6 +5,15 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthentifiedAccess", "AuthentifiedAccess\AuthentifiedAccess.csproj", "{02991D8D-0215-4F0C-8B45-618FC254471A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceLibrary1", "WcfServiceLibrary1\WcfServiceLibrary1.csproj", "{97407935-D53F-48F6-9000-3C474EF6A0B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathsLibrary", "MathsLibrary\MathsLibrary.csproj", "{00E57D82-E7EF-408D-9F92-06394060E7B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientSOAP", "ClientSOAP\ClientSOAP.csproj", "{8455AC44-5165-4C49-87AB-7455F1AA3379}"
+	ProjectSection(ProjectDependencies) = postProject
+		{00E57D82-E7EF-408D-9F92-06394060E7B6} = {00E57D82-E7EF-408D-9F92-06394060E7B6}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +24,18 @@ Global
 		{02991D8D-0215-4F0C-8B45-618FC254471A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02991D8D-0215-4F0C-8B45-618FC254471A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02991D8D-0215-4F0C-8B45-618FC254471A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97407935-D53F-48F6-9000-3C474EF6A0B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97407935-D53F-48F6-9000-3C474EF6A0B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97407935-D53F-48F6-9000-3C474EF6A0B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97407935-D53F-48F6-9000-3C474EF6A0B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00E57D82-E7EF-408D-9F92-06394060E7B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00E57D82-E7EF-408D-9F92-06394060E7B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00E57D82-E7EF-408D-9F92-06394060E7B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00E57D82-E7EF-408D-9F92-06394060E7B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8455AC44-5165-4C49-87AB-7455F1AA3379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8455AC44-5165-4C49-87AB-7455F1AA3379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8455AC44-5165-4C49-87AB-7455F1AA3379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8455AC44-5165-4C49-87AB-7455F1AA3379}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
